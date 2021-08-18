@@ -48,6 +48,8 @@ func TestCalcCellValue(t *testing.T) {
 		"=1&2":      "12",
 		`="A"="A"`:  "TRUE",
 		`="A"<>"A"`: "FALSE",
+		"=15%":       "0.0015",
+		"=1+20%":     "1.0020",
 		// Engineering Functions
 		// BESSELI
 		"=BESSELI(4.5,1)": "15.389222753735925",
